@@ -14,8 +14,8 @@ async def on_message(message):
     server = message.server
     author = message.author
 
-    if 'owo' in message.content.lower() or 'uwu' in message.content.lower():
-        msg = 'STOP YOU DEGENERATE {0.mention}'.format(author)
+    if 'owo' in message.content.lower() or 'uwu' in message.content.lower() or 'arf' in message.content.lower():
+        msg = ':red_circle::red_circle:  STOP YOU DEGENERATE :red_circle::red_circle:  {0.mention}'.format(author)
         await client.send_message(message.channel, msg)
         try:
             role = discord.utils.get(server.roles, name="FURRY")
@@ -24,12 +24,12 @@ async def on_message(message):
         try:
             role = discord.utils.get(server.roles, name="FURRY")
             await client.add_roles(message.author, role)
-            await client.send_message(message.channel, "Successfully added role {0}".format(role.name))
+            await client.send_message(message.channel, "You are a :wolf: {0}".format(role.name))
         except discord.Forbidden:
             await client.send_message(message.channel, "I don't have perms to add roles.")
 
     if ('yiff') in message.content.lower():
-        msg = 'NO YIFF ITS BAD FOR YOUR HEALTH {0.mention}'.format(author)
+        msg = ':red_circle::red_circle: NO YIFF ITS BAD FOR YOUR HEALTH :red_circle::red_circle: {0.mention}'.format(author)
         await client.send_message(message.channel, msg)
         try:
             role = discord.utils.get(server.roles, name="FURRY")
@@ -38,7 +38,7 @@ async def on_message(message):
         try:
             role = discord.utils.get(server.roles, name="FURRY")
             await client.add_roles(message.author, role)
-            await client.send_message(message.channel, "Successfully added role {0}".format(role.name))
+            await client.send_message(message.channel, "You are a :wolf: {0}".format(role.name))
         except discord.Forbidden:
             await client.send_message(message.channel, "I don't have perms to add roles.")
 
