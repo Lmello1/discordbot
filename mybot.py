@@ -16,6 +16,8 @@ async def on_message(message):
     server = message.server
     author = message.author
 
+
+    
     if 'owo' in message.content.lower() or 'uwu' in message.content.lower() or 'arf' in message.content.lower() or ':owo:' in message.content.lower():
         msg = ':red_circle::red_circle:  STOP YOU DEGENERATE :red_circle::red_circle:  {0.mention}'.format(author)
         await client.send_message(message.channel, msg)
@@ -30,8 +32,9 @@ async def on_message(message):
         except discord.Forbidden:
             await client.send_message(message.channel, "I don't have perms to add roles.")
 
-    if ('merp') in message.content.lower():
-        msg = ':red_circle::red_circle: NO YIFF ITS BAD FOR YOUR HEALTH :red_circle::red_circle: {0.mention}'.format(author)
+
+    if 'Yiff' in message.content.lower() or 'Paw' in message.content.lower() or 'aroo' in message.content.lower() or 'sergal' in message.content.lower():
+        msg = ':red_circle::red_circle: NO THATS BAD FOR YOUR HEALTH :red_circle::red_circle: {0.mention}'.format(author)
         await client.send_message(message.channel, msg)
         try:
             role = discord.utils.get(server.roles, name="lvl2 furry")
@@ -44,8 +47,9 @@ async def on_message(message):
         except discord.Forbidden:
             await client.send_message(message.channel, "I don't have perms to add roles.")
 
+
     if ('fursuit') in message.content.lower():
-        msg = ':red_circle::red_circle: NO YIFF ITS BAD FOR YOUR HEALTH :red_circle::red_circle: {0.mention}'.format(author)
+        msg = ':red_circle::red_circle: Fur=Bad :red_circle::red_circle: {0.mention}'.format(author)
         await client.send_message(message.channel, msg)
         try:
             role = discord.utils.get(server.roles, name="lvl3 furry")
@@ -59,7 +63,7 @@ async def on_message(message):
             await client.send_message(message.channel, "I don't have perms to add roles.")
 
     if ('murrsuit') in message.content.lower():
-        msg = ':red_circle::red_circle: NO YIFF ITS BAD FOR YOUR HEALTH :red_circle::red_circle: {0.mention}'.format(author)
+        msg = ':red_circle::red_circle: GET THE HEAVY ARTILARY WE HAVE A MEGA FURRY :red_circle::red_circle: {0.mention}'.format(author)
         await client.send_message(message.channel, msg)
         try:
             role = discord.utils.get(server.roles, name="lvl4 furry")
@@ -128,7 +132,6 @@ async def on_message(message):
         except discord.Forbidden:
             await client.send_message(message.channel, "I don't have perms to remove roles.")
 
-
     if ('!remove4') in message.content.lower():
         msg = 'Fine But no more goddam OWOing {0.mention}'.format(author)
         await client.send_message(message.channel, msg)
@@ -150,4 +153,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run('')
+client.run('NTI5MTIyNjgzNTUyNzkyNTc5.Dwswqw.MFjdOZNaKQCE8MB-UwUPQVQKJ_k')
