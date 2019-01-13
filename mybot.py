@@ -2,14 +2,14 @@ import discord
 
 from discord import Game
 
-badWords = ["owo", "uwu", "arf", "woof", "purr", "meow", "howl", "awoo", "aroo", "fursuit", "murrsuit", "bad dragon", "good boy", "good boye", "dawg", "merp", "sergal", "ad", "after dark", "knot", "lewd", "yiff", "canine", "equine", "femboi fox", "femboy fox", "chee", "paws", "maws", "belly", "belly rub", "arcanine", "FA", "furaffinity", "e621", "collar", "leash", "whine", "pet", "rp", "roleplay", "role play", "pup", "puppy", "cub", "pups", "puppies", "cubs", "top", "bottom", "switch", "roo", "waff", "scalie", "scalies", "folf", "werewolf", "housepets!", "housepets", "dobe", "daddy", "bulge", "k9", "k-9", "anthrocon", "mff", "flop"]
+badWords = ["owo", "uwu", "arf", "woof", "purr", "meow", "howl", "awoo", "aroo", "fursuit", "murrsuit", "bad dragon", "good boy", "good boye", "dawg", "merp", "sergal", "after dark", "knot", "lewd", "yiff", "canine", "equine", "femboi fox", "femboy fox", "chee", "paws", "maws", "belly", "belly rub", "arcanine", "FA", "furaffinity", "e621", "collar", "leash", "whine", "rp", "roleplay", "role play", "cub", "pups", "cubs", "roo", "waff", "scalie", "scalies", "folf", "werewolf", "housepets!", "housepets", "dobe", "daddy", "bulge", "anthrocon", "mff", "flop"]
+\\         ["1  ", "1  ", "1  ", "2   ", "3   ", "2   ", "3   ", "4   ", "4   ", "3      ", "4       ", "4         ", "3       ", "4        ", "2   ", "3   ", "3     ", "3         ", "4   ", "4   ", "4   ", "2     ", "2     ", "4         ", "4         ", "3   ", "3   ", "4   ", "3    ", "4        ", "3       ", "4 ", "4          ", "4   ", "2     ", "3    ", "3    ", "4 ", "4       ", "4        ", "2  ", "2   ", "2   ", "3  ", "2   ", "3     ", "4      ", "3   ", "2       ", "3         ", "3        ", "3   ", "3    ", "4    ", "4        ", "4  ", "3   "]
 
 client = discord.Client()
 
 
 @client.event
 async def on_message(message):
-    # we do not want the bot to reply to itself
     if message.author == client.user:
         return
 
@@ -153,4 +153,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run('NTI5MTIyNjgzNTUyNzkyNTc5.Dwswqw.MFjdOZNaKQCE8MB-UwUPQVQKJ_k')
+client.run('NTI5MTIyNjgzNTUyNzkyNTc5.DxwraQ.89ugi59GdLQYV0RxymcV-g5KCdY')
