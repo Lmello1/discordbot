@@ -153,4 +153,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-client.run('NTI5MTIyNjgzNTUyNzkyNTc5.DxwraQ.89ugi59GdLQYV0RxymcV-g5KCdY')
+client.run('')
